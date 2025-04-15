@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:scss": "node-sass sass/main.scss css/style.css -w",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
-    "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
-    "css:build": "npm-run-all prefix:css compress:css"
+    "compile:scss": "node-sass sass/main.scss public/style.css -w",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/style.css -o public/style.css",
+    "compress:css": "node-sass public/style.css public/style.css --output-style compressed",
+    "build": "npm-run-all prefix:css compress:css"
   },
   "author": "",
   "license": "GPL-3.0",
